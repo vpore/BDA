@@ -1,0 +1,9 @@
+data = load '<path>' using pigstorage(',') as (id:int,name:chararray,salary:int);
+
+filterdata = filter data by <cond>;
+
+certaindata = foreach data generate id,name;
+
+groupdata = group data by <col>;
+
+innerjoin = join data1 by <col>, data2 by <col2>;

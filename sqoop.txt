@@ -1,0 +1,3 @@
+sqoop import --connect jdbc:mysql://localhost:3306/<db> --username root --password cloudera --table <tb> --target-dir=/home/cloudera/<dir> -m 1
+
+sqoop export jdbc:mysql://localhost:3306/<db> --username root --password cloudera --table <tb> --exort-dir=/home/cloudera/<dir> -m 1

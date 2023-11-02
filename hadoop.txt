@@ -1,0 +1,49 @@
+hadoop version
+
+hadoop fs -ls
+
+hadoop fs -df /				--- disk usage for root directory
+
+hadoop fs -count /			--- count no. of dir, files
+
+hadoop fsck - /				--- checks the health of hdfs
+
+hadoop balancer				--- balances the load for data nodes
+
+hadoop fs -mkdir /test			--- make dir
+
+hadoop fs -put <path> <target path>	--- puts the file in target dir
+
+hadoop fs -du <path>			--- 
+
+hadoop fs -expunge
+
+hadoop fs -copyFromLocal <local path> <target path>
+
+hadoop fs -cat <target path/<txt>>
+
+hadoop fs -copyToLocal <path> <local path>
+
+hadoop fs -cp /training/*.txt <path>	--- copy all txt files to target dir
+
+hadoop fs -rm <path>			--- removes the files
+
+hadoop fs -tail <path>			--- gives data of the last byte
+
+hadoop fs -chmod 600 <path>		--- change permissions
+
+hadoop fs -chown root:root <path>	--- change the ownership
+
+hadoop fs -chgrp training <path>	--- change the group
+
+hadoop fs -mv <old> <new>		--- change the name of dir/file
+
+hadoop fs -setrep 2 <path>		--- set replication factor
+
+hadoop distcp hdfs://namenodeA/test1 hdfs://namenodeB/test2
+
+hadoop dfsadmin -safemode leave		--- safe mode is off
+
+hadoop fs
+
+hadoop fs -help

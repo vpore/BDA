@@ -1,0 +1,13 @@
+create '<tb>', '<cf1>', '<cf2>', ...
+
+alter '<tb>', NAME=>'<cf>', VERSION=>5
+
+put '<tb>', '<cf1>:<col>', 'val'
+
+scan '<tb>'
+
+get '<tb>', '<row no>'
+
+count '<tb>'
+
+truncate '<tb>'

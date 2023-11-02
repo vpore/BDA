@@ -1,0 +1,19 @@
+create database <db>;
+
+create table <tb>(id INT, name STRING, price DOUBLE)row format delimited fields terminated by ',' stored as textfile;
+
+load data local inpath '/home/cloudera/<file>' into table <tb>;
+
+alter table car rename to cars;
+
+select * from cars where id=1;
+
+select count(*) from cars;
+
+select avg(price) as avg_price from cars;
+
+select max(price) as max_price from cars;
+
+analyze table cars compute statistics;
+
+select carmodel, price from cars order by price desc;
